@@ -15,7 +15,7 @@ var resources = [
       */
     //{ name: "isometric", type: "tmx", src: "data/map/isometric.tmx" },
     { name: "isometric", type: "tmx", src: "data/map/isometric-org.tmx" },
-    { name: "isometric_staggered", type: "tmx", src: "data/map/isometric_staggered.tmx" }
+  //  { name: "isometric_staggered", type: "tmx", src: "data/map/isometric_staggered.tmx" }
 
     /* Background music.
      * @example
