@@ -42,12 +42,14 @@ class PlayerEntity extends me.Sprite {
      * update the player pos
      */
     update(dt) {
+           
+
         /////////// LEFT/RIGHT
         if (me.input.isKeyPressed("left")) {
             // update the entity velocity
             this.body.force.x = -1;//this.body.maxVel.x;
             this.body.force.y = -1;//this.body.maxVel.y;
-console.log(this.body.force.x, this.body.force.Y);    
+console.log(this.body.force.x, this.body.force.y);    
             if (!this.isCurrentAnimation("walk_left")) {
                 this.setCurrentAnimation("walk_left");
             }
@@ -58,13 +60,7 @@ console.log(this.body.force.x, this.body.force.Y);
            if (!this.isCurrentAnimation("walk_right")) {
                 this.setCurrentAnimation("walk_right");
             }
-        } else {
-            this.body.force.x = 0;
-            this.body.force.y = 0;
-        }
-        
-        ///// UP/DOWN
-        if (me.input.isKeyPressed("up")) {
+        } else if (me.input.isKeyPressed("up")) {
             // update the entity velocity
             this.body.force.x = this.body.maxVel.x;
             this.body.force.y = -this.body.maxVel.y;
