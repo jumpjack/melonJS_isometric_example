@@ -16,11 +16,6 @@ console.log(levelLayer,levelLayer2,levelLayer3,levelLayer4, me.game);
             levelLayer.tileheight
         );
 
-        super(0, 0,
-            levelLayer2.tilewidth / 2,
-            levelLayer2.tileheight
-        );
-
         this.refLayer = levelLayer;
 
         this.anchorPoint.set(0, 0);
