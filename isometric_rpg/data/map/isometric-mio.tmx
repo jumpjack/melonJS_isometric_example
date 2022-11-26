@@ -3,7 +3,7 @@
  <tileset firstgid="1" name="single" tilewidth="24" tileheight="40" tilecount="64" columns="16">
   <image source="../img/single.png" width="384" height="160"/>
  </tileset>
- <layer  name="Livello tile 0" width="10" height="10">
+ <layer  name="level 1" width="10" height="10">
   <data encoding="csv">
 0,53,53,53,53,53,53,53,53,0,
 2147483701,2147483684,0,43,43,43,0,0,0,2147483674,
@@ -17,7 +17,7 @@
 0,28,27,26,0,28,27,27,27,0
 </data>
  </layer>
- <layer  name="Livello tile 1" width="10" height="10" offsetx="0" offsety="-7">
+ <layer  name="level 2" width="10" height="10" offsetx="0" offsety="-7">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
@@ -31,7 +31,7 @@
 0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer  name="Livello tile 2" width="10" height="10" offsetx="0" offsety="-17">
+ <layer  name="level 3" width="10" height="10" offsetx="0" offsety="-17">
   <data encoding="csv">
 0,0,52,52,52,52,52,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
@@ -45,7 +45,7 @@
 0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer  name="Livello tile 3" width="10" height="10" offsetx="0" offsety="-24">
+ <layer  name="level 4" width="10" height="10" offsetx="0" offsety="-24">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
