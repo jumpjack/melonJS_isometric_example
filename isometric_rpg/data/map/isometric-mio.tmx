@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.5" tiledversion="2021.03.23" orientation="isometric" renderorder="right-down" width="10" height="10" tilewidth="24" tileheight="12" infinite="0" nextlayerid="3" nextobjectid="1">
- <tileset firstgid="1" source="s1999tileset.json"/>
+ <tileset firstgid="1" source="s1999tileset.tsx"/>
  <layer id="2" name="level 0" width="10" height="10">
   <data encoding="csv">
 0,53,53,53,53,53,53,53,53,0,
