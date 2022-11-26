@@ -14,9 +14,9 @@ class PlayerEntity extends me.Sprite {
         );
 
         // add a physic body with a diamond as a body shape
-        this.body = new me.Body(this, (new me.Rect(16, 16, 16, 16)).toIso());
+        this.body = new me.Body(this, (new me.Rect(12, 12, 12, 12)).toIso());
         // walking & jumping speed
-        this.body.setMaxVelocity(2.5, 2.5);
+        this.body.setMaxVelocity(2.0, 2.0);
         this.body.setFriction(0.4,0.4);
 
 
@@ -46,31 +46,37 @@ class PlayerEntity extends me.Sprite {
         if (me.input.isKeyPressed("left")) {
             // update the entity velocity
             this.body.force.x = -this.body.maxVel.x;
+            this.body.force.y = -this.body.maxVel.y;
             if (!this.isCurrentAnimation("walk_left")) {
                 this.setCurrentAnimation("walk_left");
             }
         } else if (me.input.isKeyPressed("right")) {
             // update the entity velocity
             this.body.force.x = this.body.maxVel.x;
-            if (!this.isCurrentAnimation("walk_right")) {
+            this.body.force.y = this.body.maxVel.y;
+           if (!this.isCurrentAnimation("walk_right")) {
                 this.setCurrentAnimation("walk_right");
             }
         } else {
             this.body.force.x = 0;
+            this.body.force.y = 0;
         }
         if (me.input.isKeyPressed("up")) {
             // update the entity velocity
+            this.body.force.x = this.body.maxVel.x;
             this.body.force.y = -this.body.maxVel.y;
             if (!this.isCurrentAnimation("walk_up") && this.body.vel.x === 0) {
                 this.setCurrentAnimation("walk_up");
             }
         } else if (me.input.isKeyPressed("down")) {
             // update the entity velocity
+            this.body.force.x = -this.body.maxVel.x;
             this.body.force.y = this.body.maxVel.y;
             if (!this.isCurrentAnimation("walk_down") && this.body.vel.x === 0) {
                 this.setCurrentAnimation("walk_down");
             }
         } else {
+            this.body.force.x = 0;
             this.body.force.y = 0;
         }
 
