@@ -53,7 +53,7 @@ console.log(this.body.force.x, this.body.force.Y);
             }
         } else if (me.input.isKeyPressed("right")) {
             // update the entity velocity
-            this.body.force.x = \;//this.body.maxVel.x;
+            this.body.force.x = 1;//this.body.maxVel.x;
             this.body.force.y = 1;//this.body.maxVel.y;
            if (!this.isCurrentAnimation("walk_right")) {
                 this.setCurrentAnimation("walk_right");
