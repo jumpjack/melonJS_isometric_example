@@ -14,9 +14,9 @@ class PlayerEntity extends me.Sprite {
         );
 
         // add a physic body with a diamond as a body shape
-        this.body = new me.Body(this, (new me.Rect(12, 12, 12, 12)).toIso());
+        this.body = new me.Body(this, (new me.Rect(8, 8, 8, 8)).toIso());
         // walking & jumping speed
-        this.body.setMaxVelocity(2.0, 2.0);
+        this.body.setMaxVelocity(1.0, 1.0);
         this.body.setFriction(0.4,0.4);
 
 
@@ -42,7 +42,7 @@ class PlayerEntity extends me.Sprite {
      * update the player pos
      */
     update(dt) {
-
+        /////////// LEFT/RIGHT
         if (me.input.isKeyPressed("left")) {
             // update the entity velocity
             this.body.force.x = -this.body.maxVel.x;
@@ -61,6 +61,8 @@ class PlayerEntity extends me.Sprite {
             this.body.force.x = 0;
             this.body.force.y = 0;
         }
+        
+        ///// UP/DOWN
         if (me.input.isKeyPressed("up")) {
             // update the entity velocity
             this.body.force.x = this.body.maxVel.x;
