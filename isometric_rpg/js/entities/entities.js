@@ -47,6 +47,7 @@ class PlayerEntity extends me.Sprite {
             // update the entity velocity
             this.body.force.x = -1;//this.body.maxVel.x;
             this.body.force.y = -1;//this.body.maxVel.y;
+console.log(this.body.force.x, this.body.force.Y);    
             if (!this.isCurrentAnimation("walk_left")) {
                 this.setCurrentAnimation("walk_left");
             }
