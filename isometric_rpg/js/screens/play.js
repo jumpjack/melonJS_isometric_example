@@ -5,7 +5,10 @@ class Selector extends me.Renderable {
     constructor() {
         // reference to the main layer
         var levelLayer = me.game.world.getChildByName("level 1")[0];
-
+        var levelLayer2 = me.game.world.getChildByName("level 2")[0];
+        var levelLayer3 = me.game.world.getChildByName("level 3")[0];
+        var levelLayer4 = me.game.world.getChildByName("level 4")[0];
+console.log(levelLayer2,levelLayer3,levelLayer4);
         // call the parent constructor using the tile size
         super(0, 0,
             levelLayer.tilewidth / 2,
