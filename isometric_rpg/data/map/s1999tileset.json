@@ -1,0 +1,21 @@
+{ "columns":16,
+ "grid":
+    {
+     "height":40,
+     "orientation":"isometric",
+     "width":24
+    },
+ "image":"..\/img\/single.png",
+ "imageheight":160,
+ "imagewidth":384,
+ "margin":0,
+ "name":"single",
+ "spacing":0,
+ "tilecount":64,
+ "tiledversion":"2021.03.23",
+ "tileheight":40,
+ "tilewidth":24,
+ "transparentcolor":"#898989",
+ "type":"tileset",
+ "version":1.5
+}
