@@ -8,15 +8,15 @@ class PlayerEntity extends me.Sprite {
         super(x, y,
             Object.assign({
                 image: "Blank_Sprite_Sheet",
-                framewidth: 32,
-                frameheight: 32
+                framewidth: 12, // player box width  - debug
+                frameheight: 12
             }, settings)
         );
 
         // add a physic body with a diamond as a body shape
-        this.body = new me.Body(this, (new me.Rect(8, 8, 8, 8)).toIso());
+        this.body = new me.Body(this, (new me.Rect(8, 8, 8, 8)).toIso()); // debug
         // walking & jumping speed
-        this.body.setMaxVelocity(1.0, 1.0);
+        this.body.setMaxVelocity(1.0, 1.0);// debug
         this.body.setFriction(0.4,0.4);
 
 
