@@ -16,7 +16,7 @@ export default function onload () {
     }
 
 // initialize the debug plugin in development mode.
-import('./js/plugin/debug/debugPanel.js').then((plugin) => {
+import('./debugPanel.js').then((plugin) => {
     // automatically register the debug panel
     me.utils.function.defer(me.plugin.register, this, plugin.DebugPanelPlugin, "debugPanel");
 });
