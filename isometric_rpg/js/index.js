@@ -15,11 +15,11 @@ export default function onload () {
         return;
     }
 
-    // initialize the debug plugin in development mode.
-    import('./js/plugin/debug/debugPanel.js').then((plugin) => {
-        // automatically register the debug panel
-        me.utils.function.defer(me.plugin.register, this, plugin.DebugPanelPlugin, "debugPanel");
-    });
+// initialize the debug plugin in development mode.
+import('./js/plugin/debug/debugPanel.js').then((plugin) => {
+    // automatically register the debug panel
+    me.utils.function.defer(me.plugin.register, this, plugin.DebugPanelPlugin, "debugPanel");
+});
     
     
     // set all ressources to be loaded
