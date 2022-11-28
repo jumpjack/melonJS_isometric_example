@@ -16,7 +16,7 @@ class PlayerEntity extends me.Sprite {
         // add a physic body with a diamond as a body shape
         this.body = new me.Body(this, (new me.Rect(8, 8, 8, 8)).toIso()); // debug
         // walking & jumping speed
-        this.body.setMaxVelocity(1.0, 1.0);// debug
+        this.body.setMaxVelocity(1.0, 0.5);// debug
         this.body.setFriction(0.4,0.4);
 
 
