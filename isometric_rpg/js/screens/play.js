@@ -10,6 +10,7 @@ class Selector extends me.Renderable {
         var levelLayer4 = me.game.world.getChildByName("level 3")[0];
 console.log(levelLayer,levelLayer2,levelLayer3,levelLayer4, me.game);
  me.game.world.sortOn = "y"
+ var level = new me.TMXTileMap("level 0", me.loader.getTMX("level 0"));
         // call the parent constructor using the tile size
         super(0, 0,
             levelLayer.tilewidth / 2,
