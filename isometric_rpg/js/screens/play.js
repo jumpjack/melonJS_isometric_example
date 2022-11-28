@@ -10,7 +10,7 @@ class Selector extends me.Renderable {
         var levelLayer4 = me.game.world.getChildByName("level 3")[0];
 console.log(levelLayer,levelLayer2,levelLayer3,levelLayer4, me.game);
  me.game.world.sortOn = "y"
- var level = new me.TMXTileMap("level 0", me.loader.getTMX("level 0"));
+
         // call the parent constructor using the tile size
         super(0, 0,
             levelLayer.tilewidth / 2,
@@ -109,6 +109,9 @@ class PlayScreen extends me.Stage {
 
         // load a level
         me.level.load("isometric");
+
+ var level = new me.TMXTileMap("isometric", me.loader.getTMX("isometric"));
+ console.log("Loaded: ", level);
 
         // display a basic tile selector
         me.game.world.addChild(new Selector());
