@@ -8,8 +8,8 @@ class PlayerEntity extends me.Sprite {
         super(x, y,
             Object.assign({
                 image: "Blank_Sprite_Sheet",
-                framewidth: 20, // player box width  - debug
-                frameheight: 30 // player box height  - debug
+                framewidth: 32, // player box width  - debug
+                frameheight: 32 // player box height  - debug
             }, settings)
         );
 
