@@ -9,7 +9,7 @@ class Selector extends me.Renderable {
         var levelLayer3 = me.game.world.getChildByName("level 2")[0];
         var levelLayer4 = me.game.world.getChildByName("level 3")[0];
 console.log(levelLayer,levelLayer2,levelLayer3,levelLayer4, me.game);
- me.game.world.sortOn = "z"
+ me.game.world.sortOn = "x"
         // call the parent constructor using the tile size
         super(0, 0,
             levelLayer.tilewidth / 2,
