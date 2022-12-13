@@ -1,7 +1,8 @@
 import * as me from 'https://esm.run/melonjs';
 
-/*class Selector extends me.Renderable {
-    // Constructor 
+/*
+class Selector extends me.Renderable {
+    // Constructor
     constructor() {
         // reference to the main layer
         var levelLayer = me.game.world.getChildByName("level 0")[0];
@@ -48,7 +49,7 @@ me.game.world.sortOn = "y";
         this.viewportEvent = me.event.on(me.event.VIEWPORT_ONCHANGE, this.viewportMove, this);
     }
 
-    // pointer move event callback 
+    // pointer move event callback
     pointerMove(event) {
         var tile = this.refLayer.getTile(event.gameWorldX, event.gameWorldY);
         if (tile && tile !== this.currentTile) {
@@ -64,20 +65,20 @@ me.game.world.sortOn = "y";
             this.currentTile = tile;
         };
     }
-*/
 
-    // viewport move event callback 
+
+    // viewport move event callback
     viewportMove(pos) {
         // invalidate the current tile when the viewport is moved
         this.currentTile = null;
     }
 
-    // Update function 
+    // Update function
     update(dt) {
         return (typeof(this.currentTile) === "object");
     }
 
-    // draw function 
+    // draw function
     draw(renderer) {
         if (this.currentTile) {
             // draw our diamond shape
@@ -98,6 +99,8 @@ me.game.world.sortOn = "y";
     }
 };
 
+*/
+
 class PlayScreen extends me.Stage {
 
     //  action to perform on state change
@@ -112,7 +115,7 @@ class PlayScreen extends me.Stage {
  var level = new me.TMXTileMap("isometric", me.loader.getTMX("isometric"));
  console.log("Loaded: ", level);
 me.game.world.sortOn = "y"; // debug
-        
+
         /*
         // display a basic tile selector
         me.game.world.addChild(new Selector());
@@ -121,18 +124,18 @@ me.game.world.sortOn = "y"; // debug
         me.input.registerPointerEvent("pointermove", me.game.viewport, function (event) {
             me.event.emit("pointermove", event);
         }, false);
-        
+
         */
     }
 
 // action to perform on state change
 
-    onDestroyEvent() {
+   /* onDestroyEvent() {
         // unsubscribe to all events
         me.off.unsubscribe(this.pointerEvent);
         me.off.unsubscribe(this.viewportEvent);
         me.input.releasePointerEvent("pointermove", me.game.viewport);
-    }
+    }*/
 };
 
 export default PlayScreen;
