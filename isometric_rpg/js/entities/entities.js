@@ -44,7 +44,7 @@ class PlayerEntity extends me.Sprite {
      * update the player pos
      */
     update(dt) {
-           
+ 	me.game.world.sortOn="y"; // debug          
 
         /////////// LEFT/RIGHT
         if (me.input.isKeyPressed("left")) {
