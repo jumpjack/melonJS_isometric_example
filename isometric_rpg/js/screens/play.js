@@ -1,7 +1,7 @@
 import * as me from 'https://esm.run/melonjs';
 
 /*class Selector extends me.Renderable {
-    /** Constructor */
+    // Constructor 
     constructor() {
         // reference to the main layer
         var levelLayer = me.game.world.getChildByName("level 0")[0];
@@ -48,7 +48,7 @@ me.game.world.sortOn = "y";
         this.viewportEvent = me.event.on(me.event.VIEWPORT_ONCHANGE, this.viewportMove, this);
     }
 
-    /** pointer move event callback */
+    // pointer move event callback 
     pointerMove(event) {
         var tile = this.refLayer.getTile(event.gameWorldX, event.gameWorldY);
         if (tile && tile !== this.currentTile) {
@@ -66,18 +66,18 @@ me.game.world.sortOn = "y";
     }
 */
 
-    /** viewport move event callback */
+    // viewport move event callback 
     viewportMove(pos) {
         // invalidate the current tile when the viewport is moved
         this.currentTile = null;
     }
 
-    /** Update function */
+    // Update function 
     update(dt) {
         return (typeof(this.currentTile) === "object");
     }
 
-    /** draw function */
+    // draw function 
     draw(renderer) {
         if (this.currentTile) {
             // draw our diamond shape
@@ -100,11 +100,9 @@ me.game.world.sortOn = "y";
 
 class PlayScreen extends me.Stage {
 
-    /**
-     *  action to perform on state change
-     */
+    //  action to perform on state change
     onResetEvent() {
-
+ me.game.world.sortOn = "y"; // debug
         // disable gravity
         me.game.world.gravity.set(0, 0);
 
@@ -113,7 +111,7 @@ class PlayScreen extends me.Stage {
 
  var level = new me.TMXTileMap("isometric", me.loader.getTMX("isometric"));
  console.log("Loaded: ", level);
- me.game.world.sortOn = "y"
+me.game.world.sortOn = "y"; // debug
         
         /*
         // display a basic tile selector
@@ -127,8 +125,8 @@ class PlayScreen extends me.Stage {
         */
     }
 
-/*     *  action to perform on state change
-     */
+// action to perform on state change
+
     onDestroyEvent() {
         // unsubscribe to all events
         me.off.unsubscribe(this.pointerEvent);
