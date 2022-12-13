@@ -113,6 +113,8 @@ class PlayScreen extends me.Stage {
  var level = new me.TMXTileMap("isometric", me.loader.getTMX("isometric"));
  console.log("Loaded: ", level);
  me.game.world.sortOn = "y"
+        
+        /*
         // display a basic tile selector
         me.game.world.addChild(new Selector());
 
@@ -120,6 +122,8 @@ class PlayScreen extends me.Stage {
         me.input.registerPointerEvent("pointermove", me.game.viewport, function (event) {
             me.event.emit("pointermove", event);
         }, false);
+        
+        */
     }
 
 /*     *  action to perform on state change
