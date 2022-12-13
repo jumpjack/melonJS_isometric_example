@@ -1,6 +1,6 @@
 import * as me from 'https://esm.run/melonjs';
 
-class Selector extends me.Renderable {
+/*class Selector extends me.Renderable {
     /** Constructor */
     constructor() {
         // reference to the main layer
@@ -64,6 +64,7 @@ me.game.world.sortOn = "y";
             this.currentTile = tile;
         };
     }
+*/
 
     /** viewport move event callback */
     viewportMove(pos) {
