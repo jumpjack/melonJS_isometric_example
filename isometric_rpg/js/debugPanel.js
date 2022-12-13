@@ -3,6 +3,9 @@
 * Copyright (C) 2011 - 2021 Olivier Biot
 * http://www.melonjs.org
 */
+
+// https://github.com/melonjs/es6-boilerplate/blob/main/src/js/plugin/debug/debugPanel.js
+
 import * as me from 'melonjs';
 
 var DEBUG_HEIGHT = 50;
