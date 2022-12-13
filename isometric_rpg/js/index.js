@@ -38,5 +38,7 @@ console.log("Debug panel registered.");
 
         // switch to PLAY state
         me.state.change(me.state.PLAY);
+        
+        me.game.world.sortOn = "y"
     });
 };
