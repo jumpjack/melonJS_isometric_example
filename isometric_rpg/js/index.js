@@ -24,21 +24,26 @@ console.log("Debug panel loaded.");
 console.log("Debug panel registered.");    
 });
     
-    
+me.game.world.sortOn = "y";     // debug
     // set all ressources to be loaded
     me.loader.preload(resources, () => {
+me.game.world.sortOn = "y";     // debug
         // set the "Play/Ingame" Screen Object
         me.state.set(me.state.PLAY, new PlayScreen());
 
+me.game.world.sortOn = "y";     // debug
         // set the fade transition effect
         me.state.transition("fade","#FFFFFF", 250);
 
+me.game.world.sortOn = "y";     // debug
         // register our objects entity in the object pool
         me.pool.register("mainPlayer", PlayerEntity);
 
+me.game.world.sortOn = "y";     // debug
         // switch to PLAY state
         me.state.change(me.state.PLAY);
         
-        me.game.world.sortOn = "y"
+me.game.world.sortOn = "y";     // debug
+
     });
 };
