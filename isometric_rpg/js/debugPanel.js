@@ -6,7 +6,8 @@
 
 // https://github.com/melonjs/es6-boilerplate/blob/main/src/js/plugin/debug/debugPanel.js
 
-import * as me from 'melonjs';
+//import * as me from 'melonjs';
+import * as me from 'https://esm.run/melonjs';
 
 var DEBUG_HEIGHT = 50;
 
