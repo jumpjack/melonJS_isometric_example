@@ -15,6 +15,8 @@ class PlayerEntity extends me.Sprite {
 
         // add a physic body with a diamond as a body shape
         this.body = new me.Body(this, (new me.Rect(8, 8, 8, 8)).toIso()); // debug
+ me.game.world.sortOn = "y"; // debug
+        
         // walking & jumping speed
         this.body.setMaxVelocity(1.0, 0.5);// debug
         this.body.setFriction(0.4,0.4);
@@ -22,7 +24,7 @@ class PlayerEntity extends me.Sprite {
 
         // set the display around our position
         me.game.viewport.follow(this, me.game.viewport.AXIS.BOTH);
-
+ 
         // enable keyboard
         me.input.bindKey(me.input.KEY.LEFT,  "left");
         me.input.bindKey(me.input.KEY.RIGHT, "right");
