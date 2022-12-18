@@ -1,6 +1,6 @@
 { "backgroundcolor":"#000000",
  "compressionlevel":-1,
- "height":10,
+ "height":160,
  "infinite":false,
  "layers":[
         {
@@ -102,5 +102,5 @@
  "tilewidth":24,
  "type":"map",
  "version":1.5,
- "width":10
+ "width":160
 }
